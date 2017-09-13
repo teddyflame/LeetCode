@@ -5,12 +5,16 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
-import com.sun.javafx.collections.MappingChange.Map;
 
 public class Q508 {
 
 	static HashMap<Integer, Integer> map = new HashMap<>();
+	
+	
+	
+	
 	static int maxCount = 1;
 	public static void main(String[] args) {
 
