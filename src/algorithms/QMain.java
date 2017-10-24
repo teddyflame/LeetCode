@@ -7,13 +7,19 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
+import com.sun.javafx.image.IntPixelAccessor;
+
 public class QMain {
 
 	public static void main(String[] args) {
+		int[] in;
+//		int[] a = in.clone();
+//		Arrays.copyofran
+//		int a = Integer.parseInt(s)
 		
-		StringBuilder sBuilder = new StringBuilder();
-		
-		sBuilder.substring(start)(start, end, str)
+//		StringBuilder sBuilder = new StringBuilder();
+//		
+//		sBuilder.substring(start)(start, end, str)
 //		int a = 2;
 //		int b = 15;
 //		int c = a^b;
@@ -68,9 +74,12 @@ public class QMain {
 //		String aString=Integer.toString(123);
 	//	aString.toCharArray()
 		
-		HashMap<Character, Integer> map = new HashMap<>();
-		
-		
+//		HashMap<Character, Integer> map = new HashMap<>();
+//		map.entrySet().iterator();
+//		
+//		String aaa  ="";
+//		
+//		aaa.startsWith(prefix);
 //		int a = 9999;
 //		int b = 9999;
 //		int c = a*b;
