@@ -12,9 +12,11 @@ public class Q39 {
 	public static void main(String[] args) {
 
 		
-		int[] in={2,3,6,7};
-		List<List<Integer>> outList = combinationSum(in, 7);
+		int[] in={1,2,3};
+		List<List<Integer>> outList = combinationSum(in, 4);
 		
+		
+		//System.out.println((outList.contains({1,2,5})));
 		System.out.println(" ");
 		
 	}
@@ -23,6 +25,7 @@ public class Q39 {
         Arrays.sort(candidates);
         
         findTarget(candidates, target,0);
+        
         
         return res;
     }
