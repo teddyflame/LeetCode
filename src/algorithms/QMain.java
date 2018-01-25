@@ -1,11 +1,14 @@
 package algorithms;
 
+import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.sun.javafx.image.IntPixelAccessor;
 
@@ -13,6 +16,12 @@ public class QMain {
 
 	public static void main(String[] args) {
 		int[] in;
+//		Arrays.con
+		Set<Integer> set = new HashSet<>();
+	//	SoftReference<T>
+		//in = {0,0};
+//		Arrays.
+		//StringBuilder
 //		int[] a = in.clone();
 //		Arrays.copyofran
 //		int a = Integer.parseInt(s)
