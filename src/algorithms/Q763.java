@@ -17,9 +17,6 @@ public class Q763 {
 	
 	public static List<Integer> partitionLabels(String S) {
 		List<Integer> res = new ArrayList<Integer>();
-		
-        //char[] source = S.toCharArray();
-		//char target = S.charAt(0);
 		while(S.length()>0){
 			char target = S.charAt(0);
 			//1、查末位的首字符
