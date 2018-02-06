@@ -4,12 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import sun.net.www.content.text.plain;
 
 public class Q64 {
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		int[][] grid = {{1,3,4,3,2},{4,2,5,3,6},{7,5,6,3,1}};
 		int out = minPathSum(grid);
 		System.out.println();

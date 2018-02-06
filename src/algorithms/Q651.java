@@ -1,6 +1,5 @@
 package algorithms;
 
-import jdk.internal.dynalink.beans.StaticClass;
 
 public class Q651 {
 

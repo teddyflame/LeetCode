@@ -1,6 +1,5 @@
 package algorithms;
 
-import com.sun.javafx.image.IntPixelAccessor;
 
 public class Q661 {
 
