@@ -17,6 +17,7 @@ public class QMain {
 	public static void main(String[] args) {
 		int[] in;
 //		Arrays.con
+		
 		Set<Integer> set = new HashSet<>();
 	//	SoftReference<T>
 		//in = {0,0};
@@ -49,7 +50,35 @@ public class QMain {
 //			}
 //		}
 		
-//		String aa = "";
+		// ----------String----------//
+//		String aa = "abc";
+//		
+//		StringBuilder sb = new StringBuilder(aa);
+//		sb.replace(1, 2, "B");
+//		
+//		System.out.println(sb.toString());
+//		
+//		char[] charArray = new char[]{'a','b','c'};
+//		
+//		String bbString = new String(charArray);
+//		bbString.toLowerCase();
+//		System.out.println(bbString);
+		
+		String[] Array = {"10", "0001", "111001", "1", "0"};
+		Arrays.sort(Array, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+				if(o1.length()<o2.length())return -1;
+				else if(o1.length()==o2.length())return o1.compareTo(o2);
+				else return 1;
+			}
+			
+		});
+		
+		for(String aa:Array){
+			System.out.println(aa);
+		}
 //		
 //		Integer.parseInt(s)
 //		

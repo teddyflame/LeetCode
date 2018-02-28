@@ -1,6 +1,5 @@
 package algorithms;
 
-import com.sun.org.apache.bcel.internal.generic.SWAP;
 
 public class Q75 {
 

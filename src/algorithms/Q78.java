@@ -3,12 +3,11 @@ package algorithms;
 import java.util.ArrayList;
 import java.util.List;
 
-import jdk.internal.dynalink.beans.StaticClass;
 
 public class Q78 {
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 		int[] nums = {1,2,3};
 		List<List<Integer>> abc = subsets(nums);

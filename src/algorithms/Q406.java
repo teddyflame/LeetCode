@@ -2,9 +2,10 @@ package algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 
-import sun.security.action.PutAllAction;
 
 public class Q406 {
 
@@ -19,29 +20,30 @@ public class Q406 {
 	}
 	
 	public static int[][] reconstructQueue(int[][] people) {
-		int n = people.length;
-	    int[][] copy = new int[n][];
-	    int[][] res = new int[n][];
-	        
-	    for (int i = 0; i < n; i++) copy[i] = Arrays.copyOf(people[i], 2);
-	    
-	    for (int i = 0; i < n; i++) {
-	        int k = -1;
-	         
-	        // pick the front element
-	        for (int j = 0; j < n; j++) {
-	            if (copy[j][1] == 0 && (k == -1 || copy[j][0] < copy[k][0])) k = j;
-	        }
-	            
-	        res[i] = people[k];   // set the result
-	        
-	        // modify the k values of those with smaller or equal h values
-	        for (int j = 0; j < n; j++) {
-	            if (copy[j][0] <= copy[k][0]) copy[j][1]--;
-	        }
-	    }
-	        
-	    return res;
+        List<int[]> list = new LinkedList<>();
+        int[][] res = new int[people.length][2];
+        Arrays.sort(people, new Comparator<int[]>() {
+
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				if(o1[0]==o2[0]){
+					return o1[1]-o2[1];
+				}else{
+					return o2[0]-o1[0];
+				}
+			}
+
+		});
+        
+        for(int i=0;i<people.length;i++){
+            list.add(people[i][1],people[i]);
+        }
+
+        for(int i=0;i<list.size();i++){
+            res[i] = list.get(i);    
+        }
+    
+        return res;
     }
 	
 
